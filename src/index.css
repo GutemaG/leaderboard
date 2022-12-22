@@ -23,23 +23,30 @@ body {
   padding: 20px;
 }
 
+.header__title {
+  font-style: italic;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
 .container {
   display: grid;
   grid-template-columns: 500px 500px;
   column-gap: 50px;
+  margin-top: 3rem;
 }
 
 .recent-score__header {
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
 }
 
 .btn {
   border: #ccc;
   border-radius: 5px;
-  padding: 5px;
-  background-color: #ccc;
-  color: #000;
+  padding: 7px;
+  cursor: pointer;
 }
 
 .recent-score__list__container {
@@ -77,11 +84,22 @@ form {
 
 form input {
   padding: 10px;
+  border-radius: 5px;
+}
+
+form input:focus {
+  border: 1px solid lightblue;
 }
 
 .btn-submit {
   align-self: flex-end;
   width: 70px;
-  padding: 5px;
   align-items: center;
+  background-color: rgb(60, 50, 206);
+  color: #fff;
+}
+
+.btn-refresh {
+  background-color: rgb(49, 45, 112);
+  color: #fff;
 }
