@@ -8,6 +8,45 @@
     <script src="./index.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header id="header">
+        <h1 class="header__title">Leader Board</h1>
+      </header>
+      <main class="container">
+        <div class="recent-score">
+          <div class="recent-score__header">
+            <h3>Recent Scores</h3>
+            <button class="btn btn-refresh" type="button">Refresh</button>
+          </div>
+          <div class="recent-score__list__container">
+            <ul class="recent-score__lists"></ul>
+          </div>
+        </div>
+        <div class="add-score">
+          <h2 class="add-score__header">Add Your Score</h2>
+          <div class="add-score__form__container">
+            <form action="#" class="add-score__form">
+              <label for="name" hidden>Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Enter your name"
+              />
+              <label for="score" hidden>Score</label>
+              <input
+                type="text"
+                name="score"
+                id="Score"
+                required
+                placeholder="Enter your Score"
+              />
+              <button type="submit" class="btn btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
